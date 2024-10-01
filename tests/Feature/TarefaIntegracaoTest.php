@@ -38,7 +38,6 @@ class TarefaIntegracaoTest extends TestCase
             'concluida' => false,
 
         ]);
-
         $response->assertStatus(422);
         $response->assertJsonValidationErrors(['titulo']);
     }
